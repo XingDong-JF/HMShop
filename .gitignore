@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+out/
+.hvigor/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+.tmp/
+tmp/

@@ -1,0 +1,94 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "鸿蒙商城应用主模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "商城应用入口"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "鸿蒙商城"
+    },
+    {
+      "name": "home",
+      "value": "首页"
+    },
+    {
+      "name": "category",
+      "value": "分类"
+    },
+    {
+      "name": "cart",
+      "value": "购物车"
+    },
+    {
+      "name": "profile",
+      "value": "我的"
+    },
+    {
+      "name": "product_list",
+      "value": "商品列表"
+    },
+    {
+      "name": "product_detail",
+      "value": "商品详情"
+    },
+    {
+      "name": "add_to_cart",
+      "value": "加入购物车"
+    },
+    {
+      "name": "buy_now",
+      "value": "立即购买"
+    },
+    {
+      "name": "price",
+      "value": "价格"
+    },
+    {
+      "name": "quantity",
+      "value": "数量"
+    },
+    {
+      "name": "total",
+      "value": "总计"
+    },
+    {
+      "name": "checkout",
+      "value": "结算"
+    },
+    {
+      "name": "empty_cart",
+      "value": "购物车为空"
+    },
+    {
+      "name": "my_orders",
+      "value": "我的订单"
+    },
+    {
+      "name": "settings",
+      "value": "设置"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "搜索商品"
+    }
+  ],
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "primary_color",
+      "value": "#FF6600"
+    },
+    {
+      "name": "background_color",
+      "value": "#F5F5F5"
+    }
+  ]
+}

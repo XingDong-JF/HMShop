@@ -1,0 +1,12 @@
+{
+  "name": "hmshop",
+  "version": "1.0.0",
+  "description": "基于鸿蒙开发的商城应用",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.6"
+  }
+}
