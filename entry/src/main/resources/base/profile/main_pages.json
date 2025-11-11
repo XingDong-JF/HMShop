@@ -1,0 +1,9 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/ProductList",
+    "pages/ProductDetail",
+    "pages/Cart",
+    "pages/Profile"
+  ]
+}
