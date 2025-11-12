@@ -3,5 +3,5 @@ import { CurrentCategoryModel } from "../model/CurrentCategoryModel"
 
 export interface CategoryViewData {
   brotherCategory: Array<BrotherCategoryModel>
-  currentCategory: Array<CurrentCategoryModel>
+  currentCategory: CurrentCategoryModel
 }

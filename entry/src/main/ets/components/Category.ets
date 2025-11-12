@@ -1,4 +1,4 @@
-import { GetHome } from '../api/HomeApi';
+import { GetHome } from '../api/Index';
 import { BannerModel } from '../model/BannerModel';
 import { BrandListModel } from '../model/BrandListModel';
 import { ChannelModel } from '../model/ChannelModel';
@@ -7,6 +7,7 @@ import { GrouponListModel } from '../model/GrouponListModel';
 import { NewGoodsListModel } from "../model/NewGoodsListModel";
 import { HotGoodsListModel } from "../model/HotGoodsListModel"
 import { TopicListModel } from "../model/TopicListModel"
+import { SearchBar } from "../view/SearchBar"
 
 @Component
 export struct Category {
@@ -187,8 +188,8 @@ export struct Category {
 
       Row() {
         Text(item.title)
-          .margin({top: 4})
-          .padding({left:2 ,right:2})
+          .margin({ top: 4 })
+          .padding({ left: 2, right: 2 })
           .fontColor("rgb(171, 149, 109)")
           .fontSize(16)
           .maxLines(1)
@@ -198,8 +199,8 @@ export struct Category {
 
       Row() {
         Text(item.subtitle)
-          .margin({top: 4})
-          .padding({left:2 ,right:2})
+          .margin({ top: 4 })
+          .padding({ left: 2, right: 2 })
           .fontColor("rgb(171, 149, 109)")
           .fontSize(12)
           .maxLines(3)
@@ -212,10 +213,8 @@ export struct Category {
   build() {
     Scroll() {
       Column() {
-        //输入框
-        Row() {
-          Search({ placeholder: "请输入商品名称" })
-        }
+        //搜索框
+        SearchBar()
 
         //轮播图
         Row() {
@@ -235,8 +234,9 @@ export struct Category {
             ForEach(this.channel, (item: ChannelModel) => {
               GridItem() {
                 this.channelGridItem(item)
-              }.onClick(()=>{
-                  this.getUIContext().getRouter().pushUrl({ url: "pages/CategoryPage", params: { cid: item.id }})
+              }.onClick(() => {
+                console.log("cid",item.id)
+                this.getUIContext().getRouter().pushUrl({ url: "pages/CategoryPage", params: { cid: item.id } })
               })
             })
           }.columnsTemplate("repeat(6,1fr)").columnsGap(10).rowsGap(10)
@@ -383,7 +383,7 @@ export struct Category {
             ForEach(this.topicList, (item: TopicListModel) => {
               FlowItem() {
                 this.topicListItem(item)
-              }.margin({top:10, bottom:10})
+              }.margin({ top: 10, bottom: 10 })
             })
           }.columnsTemplate("repeat(2,1fr)")
         }.width("100%").backgroundColor(Color.White).margin({ top: 20 })
