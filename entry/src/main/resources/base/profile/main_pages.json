@@ -1,6 +1,10 @@
 {
   "src": [
     "pages/HomePage",
-    "pages/CategoryPage"
+    "pages/CategoryPage",
+    "pages/LoginPage",
+    "pages/RegisterPage",
+    "pages/ForgetPage",
+    "pages/DetailPage"
   ]
 }

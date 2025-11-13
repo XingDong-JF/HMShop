@@ -113,7 +113,14 @@ struct CategoryPage {
                     ForEach(this.getCategoryList, (cur: CurrentCategoryModel) => {
                       ListItem() {
                         this.CategoryListItem(cur)
-                      }.width("90%")
+                      }.width("90%").onClick(()=>{
+                        this.getUIContext().getRouter().pushUrl({
+                          url: "pages/DetailPage",
+                          params: {
+                            did: cur.id
+                          }
+                        })
+                      })
                     }, (cur: CurrentCategoryModel) => cur.id.toString()) // 添加唯一key
                   }.onReachEnd(() => {
                     this.listToEnd();

@@ -54,11 +54,11 @@ export struct Selected {
                 }.width("100%")
               }
               Grid() {
-                ForEach(this.currentSubCategory, (item: CurrentSubCategoryModel) => {
+                ForEach(this.currentSubCategory, (cur: CurrentSubCategoryModel) => {
                   GridItem() {
                     Column() {
-                      Image(item.picUrl).width(70).height(70)
-                      Text(item.name)
+                      Image(cur.picUrl).width(70).height(70)
+                      Text(cur.name)
                         .fontSize(16)
                         .margin({ top: 6 })
                         .textAlign(TextAlign.Center)
